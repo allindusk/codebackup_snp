@@ -1,0 +1,27 @@
+
+
+#定时同步github代码
+# name: 同步代码并部署到腾讯云
+# on:
+#   workflow_dispatch:
+#   schedule:
+#     - cron: 0 23 * * *
+# jobs:
+#   repo-sync:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: checkout
+#         uses: actions/checkout@v2
+#       - name: cp
+#         run: |
+#           rm -rf jd_scripts
+#           git clone -b master https://github.com/lxk0301/jd_scripts.git
+#           rm -rf jd_scripts/.git
+#           ls -l
+#       - name: push
+#         run: |
+#           git config user.name github-actions
+#           git config user.email github-actions@github.com
+#           git add -A
+#           git commit -m "sync code by action"
+#           git push
