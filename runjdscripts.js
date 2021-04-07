@@ -22,14 +22,9 @@ let scriptobj_noasync = {
     cron:{m:'00',h:'00,01,19'},
     run:runconfig['jd_carnivalcity']?runconfig['jd_carnivalcity']['run']:'true'
   },
-  jd_fanslove:{//粉丝互动  3 10 * * *
-    url:'https://github.com/allindusk/codebackup_ym/raw/master/jd_fanslove.js',
-    cron:{m:'00',h:'15,20'},
-    run:runconfig['jd_fanslove']?runconfig['jd_fanslove']['run']:'true'
-  },
   jd_joy_run:{//宠汪汪邀请助力与赛跑助力  15 10 * * *
     url:'https://github.com/allindusk/codebackup_ym/raw/master/jd_joy_run.js',
-    cron:{m:'00',h:'15,17'},
+    cron:{m:'00',h:'15,17,19,21'},
     run:runconfig['jd_joy_run']?runconfig['jd_joy_run']['run']:'true'
   },
   jd_jxd:{//京小兑  30 8,16,20 * * *
@@ -52,25 +47,65 @@ let scriptobj_noasync = {
     cron:{m:'00',h:'17,20'},
     run:runconfig['jd_nzmh']?runconfig['jd_nzmh']['run']:'true'
   },
-  jd_shake:{//摇一摇  3 20 * * *
-    url:'https://github.com/allindusk/codebackup_ym/raw/master/jd_shake.js',
-    cron:{m:'00',h:'16'},
-    run:runconfig['jd_shake']?runconfig['jd_shake']['run']:'true'
-  },
   jd_speed_sign:{//京东极速版  0 7 * * *
     url:'https://github.com/allindusk/codebackup_ym/raw/master/jd_speed_sign.js',
     cron:{m:'00',h:'15,20'},
     run:runconfig['jd_speed_sign']?runconfig['jd_speed_sign']['run']:'true'
   },
-  z_mother_jump:{//母婴-跳一跳  5 8,14,20 25-31 3 *
-    url:'https://github.com/allindusk/codebackup_ym/raw/master/z_mother_jump.js',
-    cron:{m:'00',h:'00,15,19'},
-    run:runconfig['z_mother_jump']?runconfig['z_mother_jump']['run']:'true'
+  jd_unsubscribe:{//取关京东店铺和商品
+    url:'https://github.com/allindusk/codebackup_ym/raw/master/jd_unsubscribe.js',
+    cron:{m:'00',h:'15,16,17,18,19,20,21'},
+    run:runconfig['jd_unsubscribe']?runconfig['jd_unsubscribe']['run']:'true'
+  },
+  z_entertainment:{//百变大咖秀 10 10,11 * * 2-5
+    url:'https://github.com/allindusk/codebackup_ym/raw/master/z_entertainment.js',
+    cron:{m:'00',h:'15,17'},
+    run:runconfig['z_entertainment']?runconfig['z_entertainment']['run']:'true'
+  },
+  z_shake:{//摇一摇  3 20 * * *
+    url:'https://github.com/allindusk/codebackup_ym/raw/master/z_shake.js',
+    cron:{m:'00',h:'16'},
+    run:runconfig['z_shake']?runconfig['z_shake']['run']:'true'
+  },
+  z_fanslove:{//粉丝互动  3 10 * * *
+    url:'https://github.com/allindusk/codebackup_ym/raw/master/z_fanslove.js',
+    cron:{m:'00',h:'15,20'},
+    run:runconfig['z_fanslove']?runconfig['z_fanslove']['run']:'true'
+  },
+  z_marketLottery:{//京东超市-大转盘  10 10 * * *
+    url:'https://github.com/allindusk/codebackup_ym/raw/master/z_marketLottery.js',
+    cron:{m:'00',h:'16,19'},
+    run:runconfig['z_marketLottery']?runconfig['z_marketLottery']['run']:'true'
   },
   z_xmf:{//京东小魔方  10 10 25-27 3 *
     url:'https://github.com/allindusk/codebackup_ym/raw/master/z_xmf.js',
     cron:{m:'00',h:'16,21'},
     run:runconfig['z_xmf']?runconfig['z_xmf']['run']:'true'
+  },
+  monk_shop_add_to_car:{//加购有礼  15 12 * * *
+    url:'https://github.com/allindusk/codebackup_ym/raw/master/monk_shop_add_to_car.js',
+    cron:{m:'00',h:'16'},
+    run:runconfig['monk_shop_add_to_car']?runconfig['monk_shop_add_to_car']['run']:'true'
+  },
+  monk_inter_shop_sign:{//interCenter渠道店铺签到  0 0 * * *
+    url:'https://github.com/allindusk/codebackup_ym/raw/master/monk_inter_shop_sign.js',
+    cron:{m:'00',h:'17'},
+    run:runconfig['monk_inter_shop_sign']?runconfig['monk_inter_shop_sign']['run']:'true'
+  },
+  monk_shop_follow_sku:{//关注有礼  15 15 * * *
+    url:'https://github.com/allindusk/codebackup_ym/raw/master/monk_shop_follow_sku.js',
+    cron:{m:'00',h:'17'},
+    run:runconfig['monk_shop_follow_sku']?runconfig['monk_shop_follow_sku']['run']:'true'
+  },
+  monk_shop_lottery:{//店铺大转盘  3 0,10,23 * * *
+    url:'https://github.com/allindusk/codebackup_ym/raw/master/monk_shop_lottery.js',
+    cron:{m:'00',h:'16,19,22'},
+    run:runconfig['monk_shop_lottery']?runconfig['monk_shop_lottery']['run']:'true'
+  },
+  jd_live_lottery_social:{//直播间抽奖（全局
+    url:'https://github.com/allindusk/codebackup_ym/raw/master/jd_live_lottery_social.js',
+    cron:{m:'00',h:'17'},
+    run:runconfig['jd_live_lottery_social']?runconfig['jd_live_lottery_social']['run']:'true'
   },
 //======常驻=================
 }

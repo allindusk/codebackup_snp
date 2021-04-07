@@ -1,5 +1,11 @@
 #!/bin/bash
-. /etc/environment
-. ~/.profile
+. /etc/environment;. ~/.profile
 
-cd ~/jd_scripts;git push myrepo master:master --force
+JD_COOKIE="666&333"
+ckarray=(${JD_COOKIE//&/ }) 
+
+for (( i=0;i<${#ckarray[@]};i++)) 
+do
+cp -f test$i.txt test.txt
+cat test$i.txt
+done
